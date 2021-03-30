@@ -3,7 +3,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     </head>
     <body>
-        <h1>Live Chat</h1>
+        <h1>Live Chat 2</h1>
+        <!-- recordtype value needs config flag -->
+        <input type="hidden" name="liveagent.prechat:caseRecordType" value="01256000001saIH"> 
         <style type='text/css'>
             .embeddedServiceHelpButton .helpButton .uiButton {
                 background-color: #005290;
@@ -49,7 +51,7 @@
                         deploymentId: '572560000004I1k',
                         buttonId: '573560000008TaT',
                         baseLiveAgentURL: 'https://d.la2-c1cs-ph2.salesforceliveagent.com/chat', // SF Chat API Endpoint
-                        eswLiveAgentDevName: 'Live_Chat_Agent', // SF chat button DeveloperName
+                        eswLiveAgentDevName: 'Live_Chat_Agent', // SF Embedded service deployment API name
                         isOfflineSupportEnabled: true // Needs config var
                     }
                 );
