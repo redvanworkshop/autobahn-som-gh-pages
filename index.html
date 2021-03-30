@@ -1,6 +1,6 @@
 <html>
     <body>
-        <h1>Live Chat 2</h1>
+        <h1>Live Chat 3</h1>
         <style type='text/css'>
             .embeddedServiceHelpButton .helpButton .uiButton {
                 background-color: #005290;
@@ -52,23 +52,7 @@
         <script type='text/javascript' src='https://c.la2-c1cs-ph2.salesforceliveagent.com/content/g/js/51.0/deployment.js'></script>
         <script type='text/javascript'>
         liveagent.init('https://d.la2-c1cs-ph2.salesforceliveagent.com/chat', '572560000004I1k', '00D56000000IYcc');
-        // Check if a new cache is available on page load.
-        window.addEventListener('load', function(e) {
-
-            window.applicationCache.addEventListener('updateready', function(e) {
-            if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
-                // Browser downloaded a new app cache.
-                // Swap it in and reload the page to get the new hotness.
-                window.applicationCache.swapCache();
-                if (confirm('A new version of this site is available. Load it?')) {
-                window.location.reload();
-                }
-            } else {
-                // Manifest didn't changed. Nothing new to server.
-            }
-            }, false);
         
-        }, false);
         </script>
                 
     </body>
