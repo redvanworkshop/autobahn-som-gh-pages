@@ -3,7 +3,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     </head>
     <body>
-        <h1>Live Chat 5</h1>
+        <h1>Live Chat</h1>
         <style type='text/css'>
             .embeddedServiceHelpButton .helpButton .uiButton {
                 background-color: #005290;
@@ -39,18 +39,18 @@
                 embedded_svc.settings.entryFeature = 'LiveAgent';
         
                 embedded_svc.init(
-                    'https://momentum-site-424-dev-ed.cs42.my.salesforce.com',
-                    'https://sandbox-st2-developer-edition.cs42.force.com/liveAgentSetupFlow',
+                    'https://momentum-site-424-dev-ed.cs42.my.salesforce.com', // SF instance url
+                    'https://sandbox-st2-developer-edition.cs42.force.com/liveAgentSetupFlow', // SF public site
                     gslbBaseURL,
-                    '00D56000000IYcc',
-                    'Live_Chat_Agent',
+                    '00D56000000IYcc', // SF OrgId
+                    'Live_Chat_Agent', // SF Omni channel Presence Configurations DeveloperName
                     {
-                        baseLiveAgentContentURL: 'https://c.la2-c1cs-ph2.salesforceliveagent.com/content',
+                        baseLiveAgentContentURL: 'https://c.la2-c1cs-ph2.salesforceliveagent.com/content', // SF Chat Deployments url
                         deploymentId: '572560000004I1k',
                         buttonId: '573560000008TaT',
-                        baseLiveAgentURL: 'https://d.la2-c1cs-ph2.salesforceliveagent.com/chat',
-                        eswLiveAgentDevName: 'Live_Chat_Agent',
-                        isOfflineSupportEnabled: false
+                        baseLiveAgentURL: 'https://d.la2-c1cs-ph2.salesforceliveagent.com/chat', // SF Chat API Endpoint
+                        eswLiveAgentDevName: 'Live_Chat_Agent', // SF chat button DeveloperName
+                        isOfflineSupportEnabled: true // Needs config var
                     }
                 );
             };
