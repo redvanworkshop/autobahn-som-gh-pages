@@ -3,7 +3,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     </head>
     <body>
-        <h1>Live Chat 5</h1>
+        <h1>Live Chat 6</h1>
         <!-- recordtype value needs config flag -->
         <!-- <input type="hidden" name="liveagent.prechat:caseRecordType" value="01256000001saIH">  -->
         <style type='text/css'>
@@ -33,9 +33,9 @@
                     // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
                     // Returns a valid button ID.
                 //};
-                //embedded_svc.settings.prepopulatedPrechatFields = { //Sets the auto-population of pre-chat form fields
-                //    caseRecordType:"01256000001saIH"
-                //}; 
+                embedded_svc.settings.prepopulatedPrechatFields = { //Sets the auto-population of pre-chat form fields
+                    caseRecordType:""
+                }; 
                 //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
                 //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
         
